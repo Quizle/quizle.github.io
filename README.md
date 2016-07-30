@@ -1,5 +1,5 @@
 # Quizle #
-Quizle is a fun and interactive quiz built during [AngularAttack](https://www.angularattack.com) 2016. The application is written in Angular 2, combined with several othe frameworks and libraries like Lodash, Semantic UI, ng2-toastr, ... .
+Quizle is a fun and interactive quiz . The application is written in Angular 2, combined with several othe frameworks and libraries like Lodash, Semantic UI, ng2-toastr, ... .
 
 ## Goal ##
 The game is a quiz with some interesting features like:
