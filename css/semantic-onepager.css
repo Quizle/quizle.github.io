@@ -1,0 +1,199 @@
+.ui.footer.segment {
+  /*margin: 5em 0em 0em;*/
+  padding: 5em 0em;
+}
+
+.masthead.segment {
+  min-height: 500px;
+  padding: 1em 0em;
+}
+
+.masthead-loading.segment {
+  min-height: 200px;
+  padding: 2em 2em;
+}
+
+.masthead-end.segment {
+  /*min-height: 800px;*/
+  height:100%;
+  padding: 1em 0em;
+}
+
+.masthead-detail.segment {
+  min-height: 900px;
+  /*height:100%;*/
+  /*padding: 1em 0em;*/
+}
+
+.masthead .logo.item img {
+  margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+  margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+  margin-top: 3em;
+  margin-bottom: 0em;
+  /*font-size: 4em;*/
+  font-weight: normal;
+}
+
+.masthead h2 {
+  /*font-size: 1.7em;*/
+  font-weight: normal;
+}
+
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+  /*font-size: 2em;*/
+}
+
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+
+.ui.vertical.stripe p {
+  /*font-size: 1.33em;*/
+}
+
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
+
+.footer a {
+  color:rgba(255, 255, 255, 0.8);
+}
+
+.footer a:hover {
+  color:rgba(255, 255, 255, 1);
+}
+
+.secondary.pointing.menu .toc.item {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead.segment {
+    min-height: 350px;
+  }
+  .masthead h1.ui.header {
+    /*font-size: 2em;*/
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    /*font-size: 1.5em;*/
+  }
+}
+
+/*.ui.inverted.segment, .ui.primary.inverted.segment{
+  background: #7FDAD6;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(0,181,173,.5) 35px, rgba(0,181,173,.5)  70px);
+}
+
+.ui.inverted-end.segment, .ui.secondary.inverted.segment{
+
+  background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+  background-size:110px 200px;
+  background-repeat:repeat-x;
+}*/
+
+.ui.segment.teal-pattern-stripes {
+  background: #7FDAD6;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(0,181,173,.5) 35px, rgba(0,181,173,.5)  70px);
+}
+
+.ui.segment.pink-pattern-stripes {
+  background: #EF9CCB;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(0,181,173,.5) 35px, rgba(0,181,173,.5)  70px);
+}
+
+.ui.segment.yellow-pattern-stripes {
+  background: #FDDE83;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(251,189,8,.5) 35px, rgba(251,189,8,.5)  70px);
+}
+
+.ui.segment.yellow-pattern-stripes-straight {
+  background: #FDDE83;
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(251,189,8,.5) 35px, rgba(251,189,8,.5)  70px);
+}
+
+.ui.segment.yellow-pattern-stripes-alt {
+  background: #FDDE83;
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, rgba(251,189,8,.5) 35px, rgba(251,189,8,.5)  70px);
+}
+
+.ui.segment.teal-pattern-dots {
+  background-color:#00B5AD;
+  background-image: radial-gradient(#7FDAD6 15%, transparent 16%),
+  radial-gradient(#7FDAD6 15%, transparent 16%);
+  background-size:60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+.ui.segment.yellow-pattern-dots {
+  background-color:#FBBD08;
+  background-image: radial-gradient(#FDDE83 15%, transparent 16%),
+  radial-gradient(#FDDE83 15%, transparent 16%);
+  background-size:60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+.ui.segment.pink-pattern-dots {
+  background-color:#E03997;
+  background-image: radial-gradient(#EF9CCB 15%, transparent 16%),
+  radial-gradient(#EF9CCB 15%, transparent 16%);
+  background-size:60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+.ui.segment.light-pattern {
+  background-color:#FFFFFF;
+  /*background-image: radial-gradient(#FFFFFF 15%, transparent 16%),
+  radial-gradient(#FFFFFF 15%, transparent 16%);
+  background-size:60px 60px;
+  background-position: 0 0, 30px 30px;*/
+}
+
+.ui.segment.yellow-pattern {
+  background-color: #FDDE83;
+  /*background-image: radial-gradient(#FFFFFF 15%, transparent 16%),
+  radial-gradient(#FFFFFF 15%, transparent 16%);
+  background-size:60px 60px;
+  background-position: 0 0, 30px 30px;*/
+}

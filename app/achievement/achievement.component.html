@@ -1,0 +1,19 @@
+<div class="ui vertical stripe segment light-pattern">
+    <div class="ui text container">
+        <h2 class="">Achievements</h2>
+        <div class="ui relaxed items">
+            <div class="item" *ngFor="#achievement of _achievements">
+                <div class="ui medium image">
+                    <img src="../../img/badges/{{achievement?.img}}.png">
+                </div>
+                <div class="middle aligned content">
+                    <p class="header">{{achievement.name}} (+{{achievement.points}})</p>
+                    <p>{{achievement.description}}</p>
+                </div>
+            </div>
+        </div>
+        <p class="center">
+            <a class="ui huge yellow button" [routerLink]="['Achievements']">View available achievements</a>
+        </p>
+    </div>
+</div>

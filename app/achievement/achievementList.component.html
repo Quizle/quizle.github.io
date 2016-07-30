@@ -1,0 +1,20 @@
+<div class="ui vertical stripe segment">
+  <div class="ui text container">
+    <h2 class="">Available achievements</h2>
+    <a class="ui huge button teal icon" [routerLink]="['Home']">
+      <i class="icon angle double left icon"></i>
+      Back to Quizle
+    </a>
+    <div class="ui relaxed items">
+      <div class="item" *ngFor="#achievement of achievements" [class.gained]="achievement.gained">
+        <div class="ui medium image">
+          <img src="../../img/badges/{{achievement?.img}}.png">
+        </div>
+        <div class="middle aligned content">
+          <p class="header">{{achievement.gained ? achievement.name : '???'}} (+{{achievement.points}})</p>
+          <p>{{achievement.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

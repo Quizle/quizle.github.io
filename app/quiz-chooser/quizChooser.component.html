@@ -1,0 +1,17 @@
+<div class="ui vertical stripe segment">
+    <div class="ui text container">
+        <h2 class="ui centered">Choose a theme</h2>
+        <div class="ui cards centered">
+          <div class="card {{theme.color}}" *ngFor="#theme of themes">
+            <div class="content">
+              <div class="header">{{theme.name}}</div>
+              <div class="description">
+                <img class="ui image mini" src="/img/icons/{{theme.code}}.png" alt="{{theme.name}}" />
+                <a href="" [routerLink]="['QuizGame', {theme: theme.code}]">Go &raquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<footer></footer>

@@ -1,0 +1,5 @@
+<div class="ui progress" [class.warning]="timer?.current < timer?.max / 2" [class.error]="timer?.current < timer?.max / 4">
+  <div class="bar" [style.width]="getPercentage(timer)">
+    <div class="progress">{{getSeconds(timer)}}</div>
+  </div>
+</div>

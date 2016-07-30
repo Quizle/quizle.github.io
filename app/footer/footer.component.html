@@ -1,0 +1,14 @@
+<div class="ui inverted vertical footer segment teal">
+  <div class="ui center aligned container">
+    <img src="img/logo-round.png" class="ui centered tiny image">
+    <div class="ui horizontal inverted small divided link list">
+      <p>
+        Made with &#10084; by Team Neon
+      </p>
+      <h6>We used these awesome resources to build Quizle!</h6>
+      <p *ngFor="#resource of resources">
+        <a href="{{resource.link}}">{{resource.name}}</a>
+      </p>
+    </div>
+  </div>
+</div>

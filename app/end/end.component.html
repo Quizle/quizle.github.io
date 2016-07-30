@@ -1,0 +1,54 @@
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted-end vertical masthead center aligned segment yellow-pattern-stripes-alt">
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        The End<br />
+        <small *ngIf="status != null">Your score {{status?.correct}}/{{status?.total}}</small>
+      </h1>
+      <p>Aww, it's already over :(</p>
+      <a class="ui huge button pink icon button-mb" [routerLink]="['Choose']">
+        <i class="icon repeat"></i>
+        Another!
+      </a>
+      <a class="ui huge button teal icon button-mb" [routerLink]="['Home']">
+        <i class="icon angle double left icon"></i>
+        Back to Quizle
+      </a>
+    </div>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="seven wide column">
+          <h3 class="">Show others just how awesome you are</h3>
+          <p>You can share your score on twitter.</p>
+          <a class="ui huge button twitter twitter-share-button"
+             href="https://twitter.com/intent/tweet?text=I scored {{status?.correct}}/{{status?.total}} in {{status?.theme?.name}}&hashtags=angularattack,angular2,quizle"
+             data-size="large">
+             <i class="icon twitter"></i>
+             Tweet your score
+           </a>
+        </div>
+        <div class="seven wide right floated column">
+          <img class="ui image medium" src="img/twitter.png" alt="twitter-logo" />
+          <!-- <h3 class="">Challenge someone</h3>
+          <p>Send a tweet with a mention to someone to invite them to play this game.</p>
+          <div class="ui form">
+            <div class="inline fields">
+              <div class="eight wide field">
+                <label>@</label>
+                <input type="text" placeholder="V__Verena">
+              </div>
+            </div>
+          </div>
+          <a class="ui huge button blue twitter-mention-button"
+             href="https://twitter.com/intent/tweet?screen_name=g00glen00b&text=Hello%20world&hashtags=angularattack,angular2,quiz"
+             data-related="g00glen00b"
+             data-dnt="true">Tweet to @</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer></footer>

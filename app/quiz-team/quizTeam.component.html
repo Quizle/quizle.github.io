@@ -1,0 +1,40 @@
+<div class="ui vertical stripe segment yellow-pattern-stripes-straight">
+  <div class="ui middle aligned stackable grid container">
+    <div class="row">
+      <div class="two wide column">
+        <h3>Meet the team</h3>
+      </div>
+      <div class="twelve wide column right floated">
+        <!-- <div class="ui relaxed horizontal list">
+          <div class="item" *ngFor="#member of team">
+            <img class="ui avatar image tiny" [src]="member.picture">
+            <div class="content">
+              <span class="member-header">{{member.name}}</span>
+              <div class="description">
+                {{member.occupation}}
+                <br />
+                <a href="http://github.com/{{member.github}}" target="_blank">Github</a> <a href="https://twitter.com/{{member.twitter}}" target="_blank">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="" *ngFor="#member of team">
+          <img class="ui avatar middle aligned tiny image" [src]="member.picture">
+          <span>{{member.name}}</span>
+        </div> -->
+
+        <div class="ui items">
+          <div class="item" *ngFor="#member of team">
+            <div class="ui tiny image avatar border-effect">
+              <img class="filter" [src]="member.picture" />
+            </div>
+            <div class="middle aligned content">
+                <h4><span class="team-heading">{{member.name}}</span> <a href="http://github.com/{{member.github}}" target="_blank"><i class="github icon"></i></a>  <a href="https://twitter.com/{{member.twitter}}" target="_blank"><i class="twitter icon"></i></a></h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

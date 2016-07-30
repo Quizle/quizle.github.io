@@ -1,0 +1,11 @@
+<div class="ui labeled button" tabindex="0" style="margin-bottom:1em;">
+    <div class="ui button" (click)="payForBooster()">
+        <p>
+          <i class="icon {{booster.icon}}"></i> {{booster.description}}
+        </p>
+    </div>
+    <button class="ui basic left pointing label" (click)="payForBooster()">
+        {{booster.cost}}
+        <img src="/img/expensive.png" class="coinIcon" style="padding-left:0.4em;"/>
+    </button>
+</div>

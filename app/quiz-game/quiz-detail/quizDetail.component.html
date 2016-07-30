@@ -1,0 +1,20 @@
+<div class="pusher">
+  <div class="ui inverted vertical center aligned masthead-detail segment {{theme.color}}">
+    <points></points>
+    <quiz-secret></quiz-secret>
+    <div class="ui text container question-numbering">
+      {{currentQuestion}}/{{totalQuestions}}
+    </div>
+    <div class="ui text container">
+      <h2 class="question-heading">{{question?.question}}</h2>
+      <quiz-timer [timer]="timer" (timeup)="setAnswer(null)"></quiz-timer>
+      <div *ngFor="#answer of question?.answers, #index = index" class="answer">
+        <button class="ui large {{theme.complementaryColor}} button" (click)="setAnswer(answer)" [disabled]="guessed" [class.correct]="guessed && question.correct == answer">
+          {{getLetter(index) | uppercase }}. {{answer}}
+        </button>
+      </div>
+      <br>
+      <boosters></boosters>
+    </div>
+  </div>
+</div>
